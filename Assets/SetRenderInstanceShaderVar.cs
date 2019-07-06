@@ -26,7 +26,7 @@ public class SetRenderInstanceShaderVar : MonoBehaviour
 
         Debug.Log(gameObject.name + ", RefNumber: " + _propBlock.GetInt("_RefNumber"));
 
-        _propBlock.SetInt("_RefNumber", var);
+        //_propBlock.SetInt("_RefNumber", var);
         _propBlock.SetColor("_Color", Color);
         _renderer.SetPropertyBlock(_propBlock);
     }
