@@ -15,9 +15,11 @@ Shader "Custom/ImposibleSpaceViewingPlaneShader"
 		Tags { "RenderType" = "Opaque" "Queue" = "Geometry-100" "ForceNoShadowCasting" = "True" }
 		LOD 200
 
+		// we arrn't rendering this plane so these fetures aren't needed
 		ColorMask 0
 		ZWrite off
 
+		// replace the pixel value if the test is passed
 		Stencil {
 			Ref[_RefNumber]
 			Pass replace

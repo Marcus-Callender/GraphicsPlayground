@@ -13,6 +13,7 @@
 		Tags { "RenderType" = "Opaque" "ForceNoShadowCasting" = "True" }
 		LOD 200
 
+		// if _RefNumber is the same as in the buffer the test is passed
 		Stencil {
 			Ref[_RefNumber]
 			Comp equal
