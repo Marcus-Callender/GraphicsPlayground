@@ -38,7 +38,7 @@ public class Movment : MonoBehaviour
 
     bool IsGrounded()
     {
-        Debug.DrawRay(transform.position, -Vector3.up * 1.1f, Color.red);
-        return Physics.Raycast(transform.position, -Vector3.up, 1.1f);
+        Debug.DrawRay(transform.position, -transform.up * 1.1f, Color.red);
+        return Physics.Raycast(transform.position, -transform.up, 1.1f);
     }
 }

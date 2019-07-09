@@ -939,6 +939,7 @@ GameObject:
   - component: {fileID: 566802082}
   - component: {fileID: 566802081}
   - component: {fileID: 566802080}
+  - component: {fileID: 566802083}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -1018,6 +1019,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 566802078}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &566802083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566802078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fade8ef170f6f647b1c999a64fb09b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_unhilightedColor: {r: 0, g: 0, b: 0, a: 1}
+  m_hilightedColor: {r: 1, g: 0.56078434, b: 0.25882354, a: 1}
 --- !u!1 &568118908
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,6 +1219,7 @@ GameObject:
   - component: {fileID: 613558668}
   - component: {fileID: 613558667}
   - component: {fileID: 613558666}
+  - component: {fileID: 613558669}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1283,6 +1299,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613558664}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &613558669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613558664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fade8ef170f6f647b1c999a64fb09b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_unhilightedColor: {r: 0, g: 0, b: 0, a: 1}
+  m_hilightedColor: {r: 1, g: 0.56078434, b: 0.25882354, a: 1}
 --- !u!1 &808854782
 GameObject:
   m_ObjectHideFlags: 0
@@ -1938,6 +1968,7 @@ GameObject:
   - component: {fileID: 1384609459}
   - component: {fileID: 1384609458}
   - component: {fileID: 1384609457}
+  - component: {fileID: 1384609461}
   m_Layer: 0
   m_Name: Charicter
   m_TagString: Untagged
@@ -2003,6 +2034,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1384609461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384609456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0457b7e699345d140981accbdb61ded9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1612927350
 GameObject:
   m_ObjectHideFlags: 0
