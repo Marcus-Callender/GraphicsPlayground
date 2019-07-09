@@ -7,27 +7,20 @@ public class Movment : MonoBehaviour
     [SerializeField]
     private Rigidbody m_rigb;
 
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
-        /*if (Input.GetKeyDown(KeyCode.Space))
-        {
-            m_rigb.AddForce(new Vector3(0.0f, 100.0f, 0.0f));
-        }
+        Vector3 movment = Input.GetAxisRaw("Horizontal") * transform.right 
+            + Input.GetAxisRaw("Vertical") * transform.forward;
 
-        Vector3 movment = new Vector3(Input.GetAxisRaw("Horizontal"), m_rigb.velocity.y, Input.GetAxisRaw("Vertical"));
+        movment.Normalize();
         movment *= 8.0f;
 
-        m_rigb.AddForce(movment);*/
-
-        Vector3 movment = new Vector3(Input.GetAxisRaw("Horizontal"), m_rigb.velocity.y, Input.GetAxisRaw("Vertical"));
-        movment *= 8.0f;
+        movment.y = m_rigb.velocity.y;
 
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
@@ -35,16 +28,17 @@ public class Movment : MonoBehaviour
         }
         else if (!IsGrounded())
         {
-            movment.y -= 9.81f * Time.deltaTime;
+            movment.y -= 19.62f * Time.deltaTime;
         }
 
-        m_rigb.velocity = movment;
+        transform.Rotate(transform.up, Time.deltaTime * 72.0f * Input.GetAxisRaw("Mouse X"));
 
-        Debug.Log("movment: " + movment);
+        m_rigb.velocity = movment;
     }
 
     bool IsGrounded()
     {
+        Debug.DrawRay(transform.position, -Vector3.up * 1.1f, Color.red);
         return Physics.Raycast(transform.position, -Vector3.up, 1.1f);
     }
 }
